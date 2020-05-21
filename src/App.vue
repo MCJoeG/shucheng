@@ -1,30 +1,15 @@
 <template>
   <div id="app">
-    <HelloWorld/>
-    <mt-button @click.native="testClick" style="background:lightblue">点击我测试</mt-button>
+    <router-view/>
   </div>
 </template>
 
 <script>
-// export default {}
-// document.addEventListener('DOMContentLoaded',() => {
-// })
-import HelloWorld from './components/HelloWorld'
-import {Toast} from 'mint-ui'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  },
-  methods: {
-    testClick () {
-      Toast({
-        message: 'sad',
-        duration: 5000
-      })
-    }
-  }
+  // name: 'App'
+  // components: {
+  // }
 }
 document.addEventListener('DOMContentLoader', () => {
   const html = document.querySelector('html')
@@ -34,13 +19,11 @@ document.addEventListener('DOMContentLoader', () => {
 })
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss" scoped>
+  #app{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
 </style>
