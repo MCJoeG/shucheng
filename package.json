@@ -13,7 +13,7 @@
   "dependencies": {
     "babel-plugin-component": "^1.1.1",
     "element-ui": "^2.13.1",
-    "epubjs": "^0.3.86",
+    "epubjs": "^0.3.93",
     "mint-ui": "^2.2.13",
     "node-sass": "^4.14.1",
     "vue": "^2.5.2",
